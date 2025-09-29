@@ -1,0 +1,329 @@
+/* ======================================= */
+/*          إعدادات عامة وخطوط             */
+/* ======================================= */
+
+/* متغيرات الألوان والمسافات المحسنة */
+:root {
+    /* الألوان الأساسية */
+    --color-primary: #1e3a8a;
+    --color-primary-light: #3b82f6;
+    --color-primary-dark: #1e40af;
+    --color-secondary: #0891b2;
+    --color-success: #15803d;
+    
+    /* خلفيات */
+    --bg-main: linear-gradient(to bottom right, #eff6ff, #ecfeff);
+    --bg-card: #ffffff;
+    --bg-navbar: rgba(255, 255, 255, 0.95);
+    
+    /* النصوص */
+    --text-dark: #111827;
+    --text-medium: #4b5563;
+    --text-light: #6b7281;
+    --border-color: #e5e7eb;
+    
+    /* الظلال */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    
+    /* الانتقالات */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.2s ease-in-out;
+    --transition-slow: 0.3s ease-in-out;
+    
+    /* المسافات */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+/* إعادة تعيين الأساسيات */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-display: swap;
+    background: var(--bg-main);
+    color: var(--text-medium);
+    line-height: 1.7;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+/* ======================================= */
+/*              شريط التنقل                */
+/* ======================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg-navbar);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+    transition: var(--transition-normal);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo h2 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-lg);
+}
+
+.nav-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 0.5rem;
+    transition: var(--transition-normal);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-primary);
+    background-color: #eff6ff;
+    outline: none;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--color-primary);
+    transition: var(--transition-normal);
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ======================================= */
+/*          الهيكل العام والحاوية           */
+/* ======================================= */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem var(--spacing-md) var(--spacing-xl);
+}
+
+main {
+    contain: layout style;
+}
+
+/* ======================================= */
+/*         العناوين والنصوص والأزرار        */
+/* ======================================= */
+
+h1, h2, h3 {
+    color: var(--text-dark);
+    font-weight: 800;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    margin-bottom: var(--spacing-md);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-intro {
+    margin-bottom: 4rem;
+}
+
+.section-intro p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition-normal);
+    border: 2px solid transparent;
+    cursor: pointer;
+    contain: layout style paint;
+}
+
+.button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.button-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background-color: var(--bg-card);
+    color: var(--color-primary);
+    border-color: #bfdbfe;
+}
+
+.button-outline:hover {
+    background-color: #eff6ff;
+    transform: translateY(-2px);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+/* ======================================= */
+/*          البطاقات والشبكات              */
+/* ======================================= */
+
+.grid {
+    display: grid;
+    gap: var(--spacing-xl);
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    transition: var(--transition-normal);
+    contain: layout style;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary-light);
+}
+
+.card-header h2, 
+.card-header h3 {
+    margin-right: var(--spacing-md);
+    margin-bottom: 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+}
+
+.info-item svg {
+    margin-left: 0.75rem;
+    color: var(--color-primary-light);
+    flex-shrink: 0;
+}
+
+.info-item strong {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-left: var(--spacing-sm);
+}
+
+.info-item span {
+    margin-right: var(--spacing-sm);
+}
+
+.financial-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.financial-item span:first-child {
+    color: var(--text-medium);
+}
+
+.financial-item span:last-child {
+    font-weight: 700;
+}
+
+/* ألوان الخلفيات */
+.bg-blue-light { background-color: #eff6ff; }
+.text-blue-dark { color: #1e3a8a; }
+.bg-green-light { background-color: #f0fdf4; }
+.text-green-dark { color: var(--color-success); }
+.bg-cyan-light { background-color: #ecfeff; }
+.text-cyan-
