@@ -1,272 +1,149 @@
-/* General Styles */
-:root {
-    --primary-color: #003366; /* Dark Blue */
-    --secondary-color: #c00000; /* Red from logo */
-    --text-color: #333;
-    --bg-color: #f4f4f4;
-    --white-color: #fff;
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب يحيى لطف الله الحديقي للمقاولات العامة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-body {
-    font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--white-color);
-    text-align: right;
-}
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="شعار مكتب يحيى الحديقي">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#projects">مشاريعنا</a></li>
+                    <li><a href="#gallery">معرض الصور</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.container {
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
-}
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>مكتب يحيى لطف الله الحديقي للمقاولات العامة</h1>
+            <p>YAHYA AL-HEDIQI OFFICE FOR GENERAL CONTRACTING</p>
+            <p class="subtitle">التميز في تحقيق جودة الأداء وسرعة الإنجاز</p>
+            <a href="#services" class="btn">اكتشف خدماتنا</a>
+        </div>
+    </section>
 
-h1, h2, h3 {
-    color: var(--primary-color);
-}
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>تأسس مكتب يحيى لطف الله الحديقي للمقاولات العامة كمكتب هندسي ومقاولات عامة، كامتداد طبيعي وهام للإنجازات التي حققها المكتب خلال أكثر من اثني عشر عاماً في مجال المقاولات العامة بالجمهورية اليمنية منذ العام ٢٠٠٧م.</p>
+        </div>
+    </section>
 
-h2 {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 2.5rem;
-    position: relative;
-}
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="images/icon-water.png" alt="ايقونة مياه">
+                    <h3>شبكات المياه والصرف الصحي</h3>
+                    <p>تنفيذ وصيانة شبكات المياه والصرف الصحي بأعلى المعايير.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/icon-building.png" alt="ايقونة مباني">
+                    <h3>المباني والإنشاءات</h3>
+                    <p>إنشاء المباني الحكومية وغير الحكومية والوحدات السكنية.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/icon-health.png" alt="ايقونة مرافق صحية">
+                    <h3>المرافق الصحية</h3>
+                    <p>إنشاء وترميم المرافق والوحدات الصحية وتجهيزها.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/icon-road.png" alt="ايقونة طرق">
+                    <h3>الطرق والجسور</h3>
+                    <p>تنفيذ مشاريع الطرق والجسور للمساهمة في تطوير البنية التحتية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: var(--secondary-color);
-}
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>أبرز مشاريعنا</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>إنشاء وصيانة مشروع مياه مطرة</h3>
+                    <p><strong>الجهة:</strong> الصندوق الاجتماعي للتنمية (SFD)</p>
+                    <p><strong>الموقع:</strong> الحديدة</p>
+                    <p><strong>التاريخ:</strong> 2021</p>
+                </div>
+                <div class="project-card">
+                    <h3>بناء فصول وحمامات لمدرسة زين العابدين</h3>
+                    <p><strong>الجهة:</strong> منظمة أكتد (ACTED)</p>
+                    <p><strong>الموقع:</strong> مأرب</p>
+                    <p><strong>التاريخ:</strong> 2024</p>
+                </div>
+                <div class="project-card">
+                    <h3>ترميم مدرسة الزرواني وصلاح الدين</h3>
+                    <p><strong>الجهة:</strong> مشروع الأشغال العامة (PWP)</p>
+                    <p><strong>الموقع:</strong> تعز</p>
+                    <p><strong>التاريخ:</strong> 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-section {
-    padding: 60px 0;
-}
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery1.jpg" alt="صورة مشروع 1">
+                <img src="images/gallery2.jpg" alt="صورة مشروع 2">
+                <img src="images/gallery3.jpg" alt="صورة مشروع 3">
+                <img src="images/gallery4.jpg" alt="صورة مشروع 4">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonial Section -->
+    <section id="testimonial">
+        <div class="container">
+            <h2>شركاء النجاح</h2>
+            <p>"نشهد لمنظمة توباز بأن مكتب يحيى لطف الله الحديقي للمقاولات قد قام بتنفيذ مشروع مركز نور الدين التنموي - مأرب ٢٠٢٣م"</p>
+            <div class="testimonial-logo">
+                <img src="images/cert.jpg" alt="شهادة تقدير">
+            </div>
+        </div>
+    </section>
 
-/* Header */
-header {
-    background: var(--white-color);
-    color: var(--primary-color);
-    padding-top: 10px;
-    min-height: 80px;
-    border-bottom: 3px solid var(--secondary-color);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <p><strong>العنوان:</strong> الجمهورية اليمنية - صنعاء - شرق الكلية الحربية - الحصبة</p>
+            <p><strong>الهاتف:</strong> 00967777708336 | 00967777797045</p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:Yahyaalhodiqi@gmail.com">Yahyaalhodiqi@gmail.com</a></p>
+        </div>
+    </section>
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025، مكتب يحيى لطف الله الحديقي للمقاولات العامة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
 
-header .logo img {
-    height: 60px;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-header a:hover {
-    color: var(--secondary-color);
-}
-
-/* Hero Section */
-#hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: var(--white-color);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    color: var(--white-color);
-}
-
-#hero p {
-    font-size: 1.2rem;
-}
-
-#hero .subtitle {
-    font-size: 1.5rem;
-    color: #ddd;
-    margin-bottom: 30px;
-}
-
-.btn {
-    display: inline-block;
-    background: var(--secondary-color);
-    color: var(--white-color);
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #a00000;
-}
-
-/* About Section */
-#about {
-    background: var(--bg-color);
-}
-
-#about p {
-    font-size: 1.1rem;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Services Section */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    text-align: center;
-}
-
-.service-item {
-    background: var(--white-color);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.service-item:hover {
-    transform: translateY(-10px);
-}
-
-.service-item img {
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-/* Projects Section */
-#projects {
-    background: var(--bg-color);
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background: var(--white-color);
-    border-left: 5px solid var(--primary-color);
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.project-card h3 {
-    margin-top: 0;
-    color: var(--secondary-color);
-}
-
-/* Gallery Section */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* Testimonial Section */
-#testimonial {
-    background: var(--primary-color);
-    color: var(--white-color);
-    text-align: center;
-}
-
-#testimonial h2 {
-    color: var(--white-color);
-}
-#testimonial h2::after {
-    background-color: var(--white-color);
-}
-
-#testimonial p {
-    font-size: 1.2rem;
-    font-style: italic;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-#testimonial .testimonial-logo img {
-    max-width: 100%;
-    height: auto;
-    max-height: 300px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* Contact Section */
-#contact {
-    text-align: center;
-    background: var(--bg-color);
-}
-
-#contact p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-}
-
-#contact a {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: var(--white-color);
-    text-align: center;
-    padding: 20px 0;
-}
+</body>
+</html>
