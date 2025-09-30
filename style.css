@@ -1,149 +1,335 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب يحيى لطف الله الحديقي للمقاولات العامة</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+/* ----------------------------------------------------- */
+/* 1. المتغيرات والألوان الأساسية (Corporate Colors) */
+/* ----------------------------------------------------- */
+:root {
+    --primary-color: #003366; /* أزرق داكن (Navy/Corporate Blue) */
+    --secondary-color: #FFA500; /* برتقالي (Accent/Safety Orange) */
+    --text-color: #333333;
+    --light-bg: #f5f5f5; /* خلفية رمادية فاتحة للمقاطع المتبادلة */
+    --white: #ffffff;
+}
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="شعار مكتب يحيى الحديقي">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#hero">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#services">خدماتنا</a></li>
-                    <li><a href="#projects">مشاريعنا</a></li>
-                    <li><a href="#gallery">معرض الصور</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* ----------------------------------------------------- */
+/* 2. التنسيقات العامة والخطوط */
+/* ----------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h1>مكتب يحيى لطف الله الحديقي للمقاولات العامة</h1>
-            <p>YAHYA AL-HEDIQI OFFICE FOR GENERAL CONTRACTING</p>
-            <p class="subtitle">التميز في تحقيق جودة الأداء وسرعة الإنجاز</p>
-            <a href="#services" class="btn">اكتشف خدماتنا</a>
-        </div>
-    </section>
+body {
+    font-family: 'Cairo', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    direction: rtl; /* التأكيد على الاتجاه من اليمين لليسار */
+    background-color: var(--white);
+}
 
-    <!-- About Us Section -->
-    <section id="about">
-        <div class="container">
-            <h2>من نحن</h2>
-            <p>تأسس مكتب يحيى لطف الله الحديقي للمقاولات العامة كمكتب هندسي ومقاولات عامة، كامتداد طبيعي وهام للإنجازات التي حققها المكتب خلال أكثر من اثني عشر عاماً في مجال المقاولات العامة بالجمهورية اليمنية منذ العام ٢٠٠٧م.</p>
-        </div>
-    </section>
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>خدماتنا</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <img src="images/icon-water.png" alt="ايقونة مياه">
-                    <h3>شبكات المياه والصرف الصحي</h3>
-                    <p>تنفيذ وصيانة شبكات المياه والصرف الصحي بأعلى المعايير.</p>
-                </div>
-                <div class="service-item">
-                    <img src="images/icon-building.png" alt="ايقونة مباني">
-                    <h3>المباني والإنشاءات</h3>
-                    <p>إنشاء المباني الحكومية وغير الحكومية والوحدات السكنية.</p>
-                </div>
-                <div class="service-item">
-                    <img src="images/icon-health.png" alt="ايقونة مرافق صحية">
-                    <h3>المرافق الصحية</h3>
-                    <p>إنشاء وترميم المرافق والوحدات الصحية وتجهيزها.</p>
-                </div>
-                <div class="service-item">
-                    <img src="images/icon-road.png" alt="ايقونة طرق">
-                    <h3>الطرق والجسور</h3>
-                    <p>تنفيذ مشاريع الطرق والجسور للمساهمة في تطوير البنية التحتية.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+section {
+    padding: 60px 0;
+    text-align: center;
+}
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>أبرز مشاريعنا</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>إنشاء وصيانة مشروع مياه مطرة</h3>
-                    <p><strong>الجهة:</strong> الصندوق الاجتماعي للتنمية (SFD)</p>
-                    <p><strong>الموقع:</strong> الحديدة</p>
-                    <p><strong>التاريخ:</strong> 2021</p>
-                </div>
-                <div class="project-card">
-                    <h3>بناء فصول وحمامات لمدرسة زين العابدين</h3>
-                    <p><strong>الجهة:</strong> منظمة أكتد (ACTED)</p>
-                    <p><strong>الموقع:</strong> مأرب</p>
-                    <p><strong>التاريخ:</strong> 2024</p>
-                </div>
-                <div class="project-card">
-                    <h3>ترميم مدرسة الزرواني وصلاح الدين</h3>
-                    <p><strong>الجهة:</strong> مشروع الأشغال العامة (PWP)</p>
-                    <p><strong>الموقع:</strong> تعز</p>
-                    <p><strong>التاريخ:</strong> 2023</p>
-                </div>
-            </div>
-        </div>
-    </section>
+section.alt-bg {
+    background-color: var(--light-bg);
+}
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <div class="container">
-            <h2>معرض الصور</h2>
-            <div class="gallery-grid">
-                <img src="images/gallery1.jpg" alt="صورة مشروع 1">
-                <img src="images/gallery2.jpg" alt="صورة مشروع 2">
-                <img src="images/gallery3.jpg" alt="صورة مشروع 3">
-                <img src="images/gallery4.jpg" alt="صورة مشروع 4">
-            </div>
-        </div>
-    </section>
-    
-    <!-- Testimonial Section -->
-    <section id="testimonial">
-        <div class="container">
-            <h2>شركاء النجاح</h2>
-            <p>"نشهد لمنظمة توباز بأن مكتب يحيى لطف الله الحديقي للمقاولات قد قام بتنفيذ مشروع مركز نور الدين التنموي - مأرب ٢٠٢٣م"</p>
-            <div class="testimonial-logo">
-                <img src="images/cert.jpg" alt="شهادة تقدير">
-            </div>
-        </div>
-    </section>
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>تواصل معنا</h2>
-            <p><strong>العنوان:</strong> الجمهورية اليمنية - صنعاء - شرق الكلية الحربية - الحصبة</p>
-            <p><strong>الهاتف:</strong> 00967777708336 | 00967777797045</p>
-            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:Yahyaalhodiqi@gmail.com">Yahyaalhodiqi@gmail.com</a></p>
-        </div>
-    </section>
+h2 {
+    font-size: 2.2em;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025، مكتب يحيى لطف الله الحديقي للمقاولات العامة. جميع الحقوق محفوظة.</p>
-        </div>
-    </footer>
+/* خط تحت العناوين الرئيسية */
+h2::after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
 
-</body>
-</html>
+/* ----------------------------------------------------- */
+/* 3. شريط التنقل (Header) */
+/* ----------------------------------------------------- */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px; /* حجم الشعار */
+    filter: brightness(0) invert(1); /* جعل الشعار أبيض ليتناسب مع الخلفية الزرقاء */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color); /* البرتقالي عند المرور بالماوس */
+}
+
+/* ----------------------------------------------------- */
+/* 4. القسم الرئيسي (Hero Section) */
+/* ----------------------------------------------------- */
+#hero {
+    /* يُفترض أن صورة الخلفية موجودة في مسار: images/dam-and-mountain.jpg */
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('images/dam-and-mountain.jpg') no-repeat center center/cover;
+    color: var(--white);
+    padding: 150px 0;
+    height: 80vh; /* ارتفاع مناسب */
+    display: flex;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+#hero .subtitle {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid var(--secondary-color);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* ----------------------------------------------------- */
+/* 5. قسم الخدمات (Services) */
+/* ----------------------------------------------------- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-item {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+}
+
+.service-item h3 {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+}
+
+/* ----------------------------------------------------- */
+/* 6. قسم المشاريع (Projects) */
+/* ----------------------------------------------------- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    text-align: right;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    border-right: 5px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.project-card p strong {
+    color: var(--secondary-color);
+}
+
+/* ----------------------------------------------------- */
+/* 7. معرض الصور (Gallery) */
+/* ----------------------------------------------------- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* ----------------------------------------------------- */
+/* 8. قسم الإفادات (Testimonial) */
+/* ----------------------------------------------------- */
+#testimonial .container {
+    max-width: 800px;
+}
+
+.quote {
+    font-size: 1.3em;
+    font-style: italic;
+    color: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.testimonial-logo img {
+    max-width: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------------------------------- */
+/* 9. قسم التواصل (Contact) و (Footer) */
+/* ----------------------------------------------------- */
+#contact p a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#contact p a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* ----------------------------------------------------- */
+/* 10. استجابة التصميم (Media Queries) */
+/* ----------------------------------------------------- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        padding: 5px 15px;
+    }
+
+    #hero {
+        padding: 100px 0;
+        height: auto;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .services-grid, .projects-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        text-align: center;
+        border-right: none;
+        border-bottom: 5px solid var(--primary-color);
+    }
+}
