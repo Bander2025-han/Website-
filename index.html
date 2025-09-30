@@ -3,176 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="مؤسسة يحيى لطف الله الحديقي للمقاولات العامة في اليمن. خبرة واسعة منذ 2007 في مشاريع البنية التحتية والإنشاء والترميم.">
-    <meta name="keywords" content="مقاولات عامة, بناء, إنشاءات, بنية تحتية, مشاريع مياه, ترميم, اليمن, صنعاء">
-    <meta name="author" content="مؤسسة يحيى لطف الله الحديقي للمقاولات العامة">
-    
-    <title>مؤسسة يحيى لطف الله الحديقي للمقاولات العامة - خبرة منذ 2007</title>
-    
-    <!-- Google Fonts -->
+    <title>مكتب يحيى لطف الله الحديقي للمقاولات العامة</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ======================= Header & Navbar ======================= -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>مؤسسة الحديقي للمقاولات</h2>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- 1. الشعار -->
+                <img src="images/logo.png" alt="شعار مكتب يحيى الحديقي">
             </div>
             <nav>
-                <ul class="nav-menu">
-                    <li><a href="#about" class="nav-link">من نحن</a></li>
-                    <li><a href="#gallery" class="nav-link">معرض المشاريع</a></li>
-                    <li><a href="#projects" class="nav-link">سجل المشاريع</a></li>
-                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#projects">مشاريعنا</a></li>
+                    <li><a href="#gallery">معرض الصور</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
                 </ul>
             </nav>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </header>
 
-    <main class="container">
-        <!-- ======================= About Us Section ======================= -->
-        <section id="about">
-            <div class="text-center section-intro">
-                <h1>من نحن</h1>
-                <p>مؤسسة يمنية رائدة في مجال المقاولات العامة، نتمتع بخبرة واسعة ومثبتة في تنفيذ مشاريع البنية التحتية الحيوية.</p>
-            </div>
+    <!-- Hero Section -->
+    <!-- 2. صورة الخلفية الرئيسية -->
+    <section id="hero" style="background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('images/dam-and-mountain.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <h1>مكتب يحيى لطف الله الحديقي للمقاولات العامة</h1>
+            <p>YAHYA AL-HEDIQI OFFICE FOR GENERAL CONTRACTING</p>
+            <p class="subtitle">التميز في تحقيق جودة الأداء وسرعة الإنجاز</p>
+            <a href="#services" class="btn">اكتشف خدماتنا</a>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-2">
-                <!-- Foundation Card -->
-                <div class="card">
-                    <div class="card-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        <h2>تأسيس راسخ</h2>
-                    </div>
-                    <div class="info-item"><strong>خبرة منذ:</strong><span>2007</span></div>
-                    <div class="info-item"><strong>المقر الرئيسي:</strong><span>صنعاء، اليمن</span></div>
-                    <div class="info-item"><strong>المالك:</strong><span>يحيى لطف الله صالح الحديقي</span></div>
-                    <div class="info-item"><strong>التصنيف:</strong><span>الدرجة الرابعة - أعمال المباني</span></div>
-                </div>
-                
-                <!-- Financial Status Card -->
-                <div class="card">
-                    <div class="card-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
-                        <h2>الوضع المالي (2021)</h2>
-                    </div>
-                    <div class="financial-item bg-blue-light"><span class="text-blue-dark">196,574,218 ريال</span><span>إجمالي الأصول</span></div>
-                    <div class="financial-item bg-green-light"><span class="text-green-dark">112,520,485 ريال</span><span>إيرادات 2021</span></div>
-                    <div class="financial-item bg-cyan-light"><span class="text-cyan-dark">1,761,615 ريال</span><span>صافي الربح 2021</span></div>
-                </div>
-            </div>
-        </section>
+    <!-- About Us Section (لا يحتوي على صور) -->
+    <section id="about">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>تأسس مكتب يحيى لطف الله الحديقي للمقاولات العامة كمكتب هندسي ومقاولات عامة، كامتداد طبيعي وهام للإنجازات التي حققها المكتب خلال أكثر من اثني عشر عاماً في مجال المقاولات العامة بالجمهورية اليمنية منذ العام ٢٠٠٧م.</p>
+        </div>
+    </section>
 
-        <!-- ======================= Gallery Section ======================= -->
-        <section id="gallery">
-            <div class="text-center section-intro">
-                <h1>معرض مشاريعنا</h1>
-                <p>نظرة على بعض المشاريع التي نفخر بتنفيذها بأعلى معايير الجودة.</p>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="images/icon-water.png" alt="ايقونة مياه">
+                    <h3>شبكات المياه والصرف الصحي</h3>
+                    <p>تنفيذ وصيانة شبكات المياه والصرف الصحي بأعلى المعايير.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/icon-building.png" alt="ايقونة مباني">
+                    <h3>المباني والإنشاءات</h3>
+                    <p>إنشاء المباني الحكومية وغير الحكومية والوحدات السكنية.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/icon-health.png" alt="ايقونة مرافق صحية">
+                    <h3>المرافق الصحية</h3>
+                    <p>إنشاء وترميم المرافق والوحدات الصحية وتجهيزها.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/icon-road.png" alt="ايقونة طرق">
+                    <h3>الطرق والجسور</h3>
+                    <p>تنفيذ مشاريع الطرق والجسور للمساهمة في تطوير البنية التحتية.</p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (لا يحتوي على صور) -->
+    <section id="projects">
+        <div class="container">
+            <h2>أبرز مشاريعنا</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>إنشاء وصيانة مشروع مياه مطرة</h3>
+                    <p><strong>الجهة:</strong> الصندوق الاجتماعي للتنمية (SFD)</p>
+                    <p><strong>الموقع:</strong> الحديدة</p>
+                    <p><strong>التاريخ:</strong> 2021</p>
+                </div>
+                <div class="project-card">
+                    <h3>بناء فصول وحمامات لمدرسة زين العابدين</h3>
+                    <p><strong>الجهة:</strong> منظمة أكتد (ACTED)</p>
+                    <p><strong>الموقع:</strong> مأرب</p>
+                    <p><strong>التاريخ:</strong> 2024</p>
+                </div>
+                <div class="project-card">
+                    <h3>ترميم مدرسة الزرواني وصلاح الدين</h3>
+                    <p><strong>الجهة:</strong> مشروع الأشغال العامة (PWP)</p>
+                    <p><strong>الموقع:</strong> تعز</p>
+                    <p><strong>التاريخ:</strong> 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="website/images/1.jpg" alt="مشروع بناء وتشييد" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/2.jpg" alt="لافتة مركز طبي" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/3.jpg" alt="مبنى مدرسة" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/4.jpg" alt="أعمال هدم وبناء" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/5.jpg" alt="مبنى من منظور علوي" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/6.jpg" alt="أساسات بناء" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/7.jpg" alt="جدار خرساني" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/8.jpg" alt="جدار استنادي" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/9.jpg" alt="أعمال تسليح سقف" loading="lazy"></div>
-                <div class="gallery-item"><img src="website/images/10.jpg" alt="مشروع مياه" loading="lazy"></div>
+                <!-- 3. صور المعرض -->
+                <img src="images/construction-roof.jpg" alt="صورة مشروع تسليح أسقف">
+                <img src="images/nour-eddin-center.jpg" alt="صورة مركز نور الدين التنموي">
+                <img src="images/solar-panels.jpg" alt="صورة مشروع ألواح شمسية">
+                <img src="images/dam-and-mountain.jpg" alt="صورة مشروع سد">
             </div>
-        </section>
+        </div>
+    </section>
+    
+    <!-- Testimonial Section -->
+    <section id="testimonial">
+        <div class="container">
+            <h2>شركاء النجاح</h2>
+            <p>"نشهد بأن مكتب يحيى لطف الله الحديقي للمقاولات قد قام بتنفيذ مشروع مركز نور الدين التنموي - مأرب ٢٠٢٣م بكفاءة عالية."</p>
+            <div class="testimonial-logo">
+                <!-- 4. صورة شهادة التقدير -->
+                <img src="images/certificate.jpg" alt="شهادة تقدير من منظمة Pure Hands">
+            </div>
+        </div>
+    </section>
 
-        <!-- ======================= Projects Section ======================= -->
-        <section id="projects">
-            <div class="text-center section-intro">
-                <h1>سجل مشاريعنا المكتملة</h1>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-7 5 7 5 7-5-7-5z"/><path d="m5 8 7 5 7-5"/><path d="m5 13 7 5 7-5"/></svg>
-                    <h3>مشاريع المياه والخدمات الأساسية</h3>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead><tr><th>اسم المشروع</th><th>الموقع</th><th>الجهة الممولة</th><th>تاريخ الانتهاء</th></tr></thead>
-                        <tbody>
-                            <tr><td data-label="اسم المشروع">إنشاء وصيانة مشروع مياه مطرة والتعزز</td><td data-label="الموقع">الحديدة</td><td data-label="الجهة الممولة">الصندوق الاجتماعي للتنمية (SFD)</td><td data-label="تاريخ الانتهاء">31/12/2021</td></tr>
-                            <tr><td data-label="اسم المشروع">استكمال خزان وادي سبأ وتجهيزه بشبكة</td><td data-label="الموقع">الحديدة</td><td data-label="الجهة الممولة">الصندوق الاجتماعي للتنمية (SFD)</td><td data-label="تاريخ الانتهاء">31/12/2023</td></tr>
-                            <tr><td data-label="اسم المشروع">بناء خزان مجمع بني عجي</td><td data-label="الموقع">مأرب</td><td data-label="الجهة الممولة">مشروع الأشغال العامة (PWP)</td><td data-label="تاريخ الانتهاء">30/10/2023</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" style="color: var(--color-success);">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-                    <h3>مشاريع الإنشاء والترميم</h3>
-                </div>
-                <div class="table-container">
-                    <table>
-                         <thead><tr><th>اسم المشروع</th><th>الموقع</th><th>الجهة الممولة</th><th>تاريخ الانتهاء</th></tr></thead>
-                        <tbody>
-                            <tr><td data-label="اسم المشروع">إنشاء وحدة الرقابة الدولية في منفذ حرض</td><td data-label="الموقع">حجة</td><td data-label="الجهة الممولة">منظمة إنقاذ الطفل</td><td data-label="تاريخ الانتهاء">28/11/2020</td></tr>
-                            <tr><td data-label="اسم المشروع">بناء فصول وحمامات لمدرسة زين العابدين</td><td data-label="الموقع">مأرب</td><td data-label="الجهة الممولة">منظمة أكتد (ACTED)</td><td data-label="تاريخ الانتهاء">05/06/2024</td></tr>
-                            <tr><td data-label="اسم المشروع">ترميم مدرسة الزرواني وصلاح الدين</td><td data-label="الموقع">تعز</td><td data-label="الجهة الممولة">مشروع الأشغال العامة (PWP)</td><td data-label="تاريخ الانتهاء">03/09/2023</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+    <!-- Contact Section (لا يحتوي على صور) -->
+    <section id="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <p><strong>العنوان:</strong> الجمهورية اليمنية - صنعاء - شرق الكلية الحربية - الحصبة</p>
+            <p><strong>الهاتف:</strong> 00967777708336 | 00967777797045</p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:Yahyaalhodiqi@gmail.com">Yahyaalhodiqi@gmail.com</a></p>
+        </div>
+    </section>
 
-        <!-- ======================= Contact Section ======================= -->
-        <section id="contact">
-            <div class="text-center section-intro"><h1>تواصل معنا</h1></div>
-            <div class="card">
-                <div class="contact-group">
-                    <div class="contact-item"><span class="label">جوال:</span><div class="contact-links"><a href="tel:00967777708336" dir="ltr">00967-777-708336</a><span>/</span><a href="tel:00967777797045" dir="ltr">00967-777-797045</a></div></div>
-                    <div class="contact-item"><span class="label">هاتف أرضي:</span><a href="tel:0096701340406" dir="ltr">00967-01-340406</a></div>
-                    <div class="contact-item"><span class="label">بريد إلكتروني:</span><a href="mailto:yahyaalhodiqi@gmail.com" dir="ltr">yahyaalhodiqi@gmail.com</a></div>
-                    <div class="contact-item"><span class="label">العنوان:</span><span>صنعاء، الجمهورية اليمنية</span></div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025، مكتب يحيى لطف الله الحديقي للمقاولات العامة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
 
-    <footer class="footer"><p>&copy; 2025 مؤسسة يحيى لطف الله الحديقي للمقاولات العامة. جميع الحقوق محفوظة.</p></footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navToggle = document.querySelector('.nav-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
-                });
-            });
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (document.querySelector(targetId)) {
-                        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
